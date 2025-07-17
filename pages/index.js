@@ -1,9 +1,11 @@
-import Link from 'next/link';
 
+import Link from 'next/link';
+import '../styles/globals.css';
 
 export default function Home() {
   return (
     <div className="startseite">
+      <div className="glitter" />
       <header className="menu">
         <nav>
           <Link href="/">Start</Link>
@@ -34,7 +36,9 @@ export default function Home() {
       <footer>
         <p>Kontakt & Anmeldung</p>
         <p>Fine Belger Platzhalter</p>
-        <p>Bald auch mit Anmeldeformular – oder schreibe an <a href="mailto:fine.belger@posteo.de">fine.belger@posteo.de</a></p>
+        <p>
+          Bald auch mit <Link href="/kontakt">Anmeldeformular</Link> – oder schreibe an <a href="mailto:fine.belger@posteo.de">fine.belger@posteo.de</a>
+        </p>
       </footer>
     </div>
   );
