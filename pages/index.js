@@ -1,11 +1,9 @@
 
 import Link from 'next/link';
-import '../styles/globals.css';
 
 export default function Home() {
   return (
     <div className="startseite">
-      <div className="glitter" />
       <header className="menu">
         <nav>
           <Link href="/">Start</Link>
@@ -18,27 +16,23 @@ export default function Home() {
 
       <div className="ueber-mich">
         <h2>Über mich</h2>
-        <p className="zitat">„Meine Heldenreise hat mir deutlich gemacht, weshalb ich in meinem Leben bisher so viele unterschiedliche Dinge lernen wollte. Ich habe während meiner Reise das letzte Puzzleteil gefunden, welches mir noch gefehlt hatte, um alles miteinander zu verbinden. Die Heldenreise ist für mich, mein inneres Strahlen in Verbindung mit anderen zu bringen und die Erfahrung, dass Verbindung auch Vertrauen bedeuten kann. Selbsterfahrungsprozesse zu unterstützen bedeutet für mich, deutlich werden zu lassen, wie du dir selbst die Erlaubnis geben kannst, dein Leben so zu führen, wie du es möchtest.“</p>
+        <p className="zitat">„Meine Heldenreise hat mir deutlich gemacht, weshalb ich in meinem Leben bisher so viele unterschiedliche Dinge lernen wollte. Ich habe während meiner Reise das letzte Puzzleteil gefunden, welches mir noch gefehlt hatte, um alles miteinander zu verbinden. Die Heldenreise ist für mich, mein inneres Strahlen in Verbindung mit anderen zu bringen und die Erfahrung, dass Verbindung auch Vertrauen bedeuten kann. Selbsterfahrungsprozesse zu unterstützen bedeutet für mich, deutlich w...
       </div>
 
+      <img src="/portrait-placeholder.jpg" alt="Fine" className="portrait" />
+
       <div className="angebote">
-        <div className="spalte">
-          <Link href="/heldenreise"><div className="angebot">Held*innenreise</div></Link>
-          <Link href="/aktuelles"><div className="angebot">Aktuelles</div></Link>
-          <Link href="/einzel-sessions"><div className="angebot">Einzel-Sessions Gestalttherapie i.A.</div></Link>
-        </div>
-        <div className="spalte">
-          <Link href="/komplimente"><div className="angebot">Tagesseminare: Komplimente machen</div></Link>
-          <Link href="/was-will-ich"><div className="angebot">Was will ich wirklich?</div></Link>
-        </div>
+        <Link href="/aktuelles"><div className="aktuelles">Aktuelles</div></Link>
+        <Link href="/heldenreise"><div className="heldenreise">Held*innenreise</div></Link>
+        <Link href="/einzel-sessions"><div className="einzel">Einzel-Sessions Gestalttherapie i.A.</div></Link>
+        <Link href="/komplimente"><div className="komplimente">Tagesseminare: Komplimente machen</div></Link>
+        <Link href="/was-will-ich"><div className="waswillich">Was will ich wirklich?</div></Link>
       </div>
 
       <footer>
-        <p>Kontakt & Anmeldung</p>
+        <p>Kontakt & Anmeldung (<Link href="/kontakt">zur Seite</Link>)</p>
         <p>Fine Belger Platzhalter</p>
-        <p>
-          Bald auch mit <Link href="/kontakt">Anmeldeformular</Link> – oder schreibe an <a href="mailto:fine.belger@posteo.de">fine.belger@posteo.de</a>
-        </p>
+        <p>Bald auch mit Anmeldeformular – oder schreibe an <a href="mailto:fine.belger@posteo.de">fine.belger@posteo.de</a></p>
       </footer>
     </div>
   );
