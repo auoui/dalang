@@ -16,7 +16,7 @@ export default function Home() {
 
       <div className="ueber-mich">
         <h2>Über mich</h2>
-        <p className="zitat">„Selbsterfahrungsprozesse zu unterstützen bedeutet für mich, deutlich werden zu lassen, wie du dir selbst die Erlaubnis geben kannst, dein Leben so zu führen, wie du es möchtest.
+        <p className="zitat">„Selbsterfahrungsprozesse zu unterstützen bedeutet für mich, deutlich werden zu lassen, wie du dir selbst die Erlaubnis geben kannst, dein Leben so zu führen, wie du es möchtest."
     </p></div>
 
       <img src="/portrait-placeholder.jpg" alt="Fine" className="portrait" />
