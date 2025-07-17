@@ -1,4 +1,3 @@
-
 import Link from 'next/link';
 
 export default function Home() {
@@ -15,11 +14,8 @@ export default function Home() {
       </header>
 
       <div className="ueber-mich">
-        <h2>Über mich</h2>
-        <p className="zitat">„Selbsterfahrungsprozesse zu unterstützen bedeutet für mich, deutlich werden zu lassen, wie du dir selbst die Erlaubnis geben kannst, dein Leben so zu führen, wie du es möchtest."
-    </p></div>
-
-      <img src="/portrait-placeholder.jpg" alt="Fine" className="portrait" />
+        <p className="zitat">„Selbsterfahrungsprozesse zu unterstützen bedeutet für mich, deutlich werden zu lassen, wie du dir selbst die Erlaubnis geben kannst, dein Leben so zu führen, wie du es möchtest."</p>
+      </div>
 
       <div className="angebote">
         <Link href="/aktuelles"><div className="aktuelles">Aktuelles</div></Link>
@@ -28,6 +24,8 @@ export default function Home() {
         <Link href="/komplimente"><div className="komplimente">Tagesseminare: Komplimente machen</div></Link>
         <Link href="/was-will-ich"><div className="waswillich">Was will ich wirklich?</div></Link>
       </div>
+
+      <img src="/portrait-placeholder.jpg" alt="Fine" className="portrait" />
 
       <footer>
         <p>Kontakt & Anmeldung (<Link href="/kontakt">zur Seite</Link>)</p>
