@@ -17,6 +17,8 @@ export default function Home() {
         <p className="zitat">„Selbsterfahrungsprozesse zu unterstützen bedeutet für mich, deutlich werden zu lassen, wie du dir selbst die Erlaubnis geben kannst, dein Leben so zu führen, wie du es möchtest."</p>
       </div>
 
+      <img src="/portrait-placeholder.jpg" alt="Fine" className="portrait" />
+
       <div className="angebote">
         <Link href="/aktuelles"><div className="aktuelles">Aktuelles</div></Link>
         <Link href="/heldenreise"><div className="heldenreise">Held*innenreise</div></Link>
@@ -25,11 +27,8 @@ export default function Home() {
         <Link href="/was-will-ich"><div className="waswillich">Was will ich wirklich?</div></Link>
       </div>
 
-      <img src="/portrait-placeholder.jpg" alt="Fine" className="portrait" />
-
       <footer>
         <p>Kontakt & Anmeldung (<Link href="/kontakt">zur Seite</Link>)</p>
-        <p>Fine Belger Platzhalter</p>
         <p>Bald auch mit Anmeldeformular – oder schreibe an <a href="mailto:fine.belger@posteo.de">fine.belger@posteo.de</a></p>
       </footer>
     </div>
